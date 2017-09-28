@@ -1,11 +1,10 @@
 <section class="todoapp">
   <header class="header">
-    <h1>Todos </h1>
-    <input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)] = "newTodo.title" (keyUp.enter)="addTodo()" >
+    <h1>Todos list </h1>
+    <input class="new-todo" placeholder="Add an item!!" autofocus="" [(ngModel)] = "newTodo.title" (keyUp.enter)="addTodo()" >
   </header>
   
-  {{todos | json}}
-  
+
   
    <section class="main" *ngIf="todos.length > 0">
     <ul class="todo-list">
